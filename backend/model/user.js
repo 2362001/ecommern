@@ -58,7 +58,6 @@ const userSchema = new mongoose.Schema({
  resetPasswordTime: Date,
 });
 
-
 //  Hash password
 userSchema.pre("save", async function (next){
   if(!this.isModified("password")){
