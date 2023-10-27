@@ -7,7 +7,7 @@ const router = express.Router();
 
 // create a new conversation
 router.post(
-  "/create-new-conversation",
+  "/getCheckWaranty",
   catchAsyncErrors(async (req, res, next) => {
     try {
       const { groupTitle, userId, sellerId } = req.body;
@@ -58,7 +58,6 @@ router.get(
     }
   })
 );
-
 
 // get user conversations
 router.get(
